@@ -111,12 +111,14 @@
 
     .container h1{
         max-width: 80%; 
-        font-size: 2.5em;
+        float: auto;
+        font-size: 2em;
     }
 
     .container h2{
         max-width: 80%; 
         font-size: 0.8em;
+        font-weight: 300;
     }
 
     ::placeholder{
@@ -140,5 +142,24 @@
 
     .container form svg{
         width: 2em;
+    }
+}
+
+@media screen and (max-width: 404px) {
+    
+    .container h1{
+        max-width: 100%; 
+        float: auto;
+        font-size: 2em;
+    }    
+    .container h2{
+        max-width: 80%; 
+        font-size: 0.6em;
+        font-weight: 300;
+    }
+    .container form{
+        max-width: 90%;        
+        padding-left: 0;
+        
     }
 }
